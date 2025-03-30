@@ -30,23 +30,23 @@ def intro():
 (00)Exit
 -----------------------------------------------------------------------
 """)
-    print("\nEnter your choise here : !# ")
-    var = int(input(""))
+    print("\nEnter your choise here :pkg install proot-distro proot-distro install ubuntu proot-distro login ubuntu!# ")
+    var = int(input("pkg install python"))
     if var == 1 :
         print("\nEnter the interface:(Default(wlan0/wlan1))")
-        interface = input("")
+        interface = input("pkg install git")
         order = "airmon-ng start {} && airmon-ng check kill".format(interface)
         geny  = os.system(order)
         intro()
     elif var == 2 :
         print("\nEnter the interface:(Default(wlan0mon/wlan1mon))")
-        interface = input("")
+        interface = input("pip install resquet")
         order = "airmon-ng stop {} && service network-manager restart".format(interface)
         geny  = os.system(order)
         intro()
     elif var == 3 :
         print("\nEnter the interface:(Default >> (wlan0mon/wlan1mon))")
-        interface = input("")
+        interface = input("git clone")
         order = "airodump-ng {} -M".format(interface)
         print("When Done Press CTRL+c")
         cmd = os.system("sleep 3")
